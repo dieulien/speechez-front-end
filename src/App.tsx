@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import Waveform from './components/Waveform.jsx';
+import oneTwoThree from './audio/one-two-three.mp3';
+import WaveSurferPlayback from './components/WavesurferPlayback';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        {/* <Waveform audio={oneTwoThree}/> */}
+        <WaveSurferPlayback />
+      </div>
     </div>
   );
 }
